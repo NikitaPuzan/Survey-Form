@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header class="header">
+    <h1 id="title">Some headline</h1>
+    <p id="description" class="header-text">some text</p>
+  </header>
+  <form id="survey-form" class="form">
+    <div class="form-class">
+      <label class="input-label" for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+    </div>
+    <div class="form-class">
+      <label class="input-label" for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+    </div>
+    <div class="form-class">
+      <label class="input-label" for="age" id="number-label">Age</label>
+      <input type="number" id="number" name="age" class="form-input" placeholder="Age" min="14" max="100" required>
+    </div>
+    <div class="form-class">
+      <strong><p class="text">What color do you like?</p></strong>
+      <select id="dropdown" name="dropdown" class="form-class form-dropdown "required>
+        <option value="">Select a value</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+    <div class="form-class">
+      <strong><p>Do you speak English?</p></strong>
+        <label class="label-radio">
+          <input class="input-radio" type="radio" id="html" name="language" value="yes">
+          Yes
+        </label>
+        <label class="label-radio">
+          <input class="input-radio" type="radio" id="css" name="language" value="no">No
+          
+        </label>
+          <label class="label-radio">
+          <input class="input-radio" type="radio" id="javascript" name="language" value="maybe">
+          A little bit
+        </label>
+    </div>
+    <div class="form-class">
+      <strong><p>What do you like to do in your free time?</p></strong>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="Play computer games">
+        Play computer games
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="go for a walk">
+        Go for a walk
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="watch movies or TV series">
+        Watch movies or TV series
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="meet with friends">
+        Meet with friends
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="explore new">
+        Explore new
+      </label>
+      <label>
+        <input class="input-checkbox" type="checkbox" name="prefer" value="improve your programming skills">
+        Improve your programming skills
+      </label>
+    </div>
+    <div class="form-class">
+      <p>Any comments</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-class">
+      <button type="submit" id="submit" class="form-button">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
